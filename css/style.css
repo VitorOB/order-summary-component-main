@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  /* Primary */
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+  --ColorBackground: #D6E1FF;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: var(--ColorBackground);
+  min-height: 100vh;
+}
+
+.container {
+  width: 25em;
+  height: 40em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8em;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.illustration {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  top: -55px;
+}
+.title-description {
+  text-align: center;
+  margin-top: -30px;
+}
+h1 {
+  color: var(--DarkBlue);
+  font-weight: 900;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--DesaturatedBlue);
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: var(--VeryPaleBlue);
+  padding: 0.7em;
+  border-radius: 0.5em;
+}
+.plan > a {
+  font-weight: 700;
+  display: flex;
+  align-self: center;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  margin: 0 5em 0 1.3em;
+}
+
+.price > p:nth-of-type(1) {
+  font-weight: 700;
+}
+
+/* button */
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.submit > button {
+  background-color: var(--BrightBlue);
+  color: var(--VeryPaleBlue);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0.5em;
+  width: 20em;
+  line-height: 1.7em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, 0.25);
+  border: none;
+}
+
+.submit > a {
+  text-decoration: none;
+  color: var(--DesaturatedBlue);
+  font-weight: 700;
+}
+
+.submit > button:hover {
+  background-color: hsl(245, 78%, 62%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
